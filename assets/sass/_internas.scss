@@ -1,0 +1,146 @@
+.formulario{
+	background-color: $color-secondary;
+	width: $ancho;
+	margin: 0;
+}
+.boton{
+	padding: 5px 10px;
+	border: none;
+	&:hover{
+		background-color: $color-secondary;
+	}
+}
+.boton--primary{
+	@extend .boton;
+	background-color: $main-bg-color;
+}
+.card{
+	width: $ancho;
+	font-size: 20px;
+	align-content: center;
+	align-items: center;
+    img{
+        width: 50%;
+    }
+}
+.tarjeta{
+	.tarjeta__img{
+		&:hover{
+			opacity: 0.5;
+		}
+	}
+	.tarjeta__img--mod{
+		@extend .tarjeta__img;
+		width: $ancho/2;
+	}
+	$asides: (
+			aside1: #55acee,
+			aside2:  #3a5795,
+			aside3: green
+	);
+	@each $aside, $color in $asides {
+		.a-#{$aside} {
+			box-shadow: 2px 0 2px 0 $color;
+		}
+	}
+}
+.carousel-inner{
+	height: 500px;
+}
+.container{
+	.container__title{
+		padding:5vh;
+		color: $main-bg-color;
+	}
+	.container__ul{
+		font-size: 13px;
+	}
+	.container__ul--mod{
+		@extend .container__ul;
+		padding-left: 10px;
+	}
+	.slider{
+		img{
+			width: $ancho;
+		}
+	}
+	h1{
+		color: $main-bg-color;
+	}
+	.abs-center {
+		color: $main-bg-color;
+		display: flex;
+		align-items: center;
+		justify-content: left;
+		min-height: 100vh;
+		padding: 10px;
+	}
+}
+.container-fluid{
+	h1{
+		color: $main-bg-color;
+	}
+	.social{
+        width: 20px;
+	    position: absolute;
+	    top: 40%;
+	    height: 205px;
+	    left: $ancho/$ancho;
+	    display: flex;
+		flex-direction: column;
+        a{
+            img{
+				@include animacion(3s, anima, 1, alternate);
+                width: 10vh;
+                &:hover{
+                    opacity: 0.5;
+                    transition: all 2s;
+                }
+            }
+        }
+    }
+}
+#slider{
+    @include background(#ccc, url(../img/sliders/headerServicio.jpg));
+    height: 50vh;
+    color: $main-bg-color;
+}
+section{
+	.slider{
+		.servicio{
+			h1{
+				font-size: 3rem;
+				margin-left: 5rem;
+				color: $main-bg-color;
+			}
+		}
+	}
+	h1{
+		color: $main-bg-color;
+	}
+}
+.servicio{
+	.servicio__title{
+		color: $main-bg-color;
+	}
+}
+.content{
+	.content__list{
+		font-size: 12px;
+	}
+	.content__list--mod{
+		@extend .content__list;
+		margin-left: 5vh;
+	}
+}
+.table{
+	.table__list{
+		color: black;
+		font-size: 12px;
+	}
+	.table__list--mod{
+		@extend .content__list;
+		margin-left: 5vh;
+	}
+}
+

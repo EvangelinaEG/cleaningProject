@@ -1,0 +1,50 @@
+.collapse{
+    .nav{
+        background-color: $main-bg-color;
+        .nav__item{
+            position: relative;
+            color: $main-bg-color;
+            font-family: $main-font;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            @include gradient-linear(top, $main-bg-color, white);
+            &:hover{
+                @include gradient-linear(top, white, $main-bg-color);
+                transition: all 2s;
+            }
+            a{
+                transition: all 2s;
+            }
+            .nav__link{
+                padding: 0 1rem;
+                color: #fff;
+                &:hover{
+                    color: rgb(92, 231, 238);
+                }
+            }
+            &:nth-child(3n) {
+                color: #fff;
+            }
+            .dropdown-menu{
+                @include gradient-linear(top, $main-bg-color, white);
+                li{
+                    @include animacion(3s, slidein, 3, alternate);
+                    .show{
+                        ul {
+                        display:block;
+                        height: 100%;
+                        transition: all 5s;
+                        @include animacion(3s, slidein, 3, alternate);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-expand-lg{
+    .navbar-collapse {
+	    justify-content: flex-end;
+    }
+}

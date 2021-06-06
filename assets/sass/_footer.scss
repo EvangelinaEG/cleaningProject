@@ -1,0 +1,17 @@
+table{
+    @include gradient-linear(top, $main-bg-color, white);
+    tbody{
+        tr{
+            td{
+                ol{
+                    margin-left:10px;
+                }
+            }
+        }
+    }
+}
+
+footer{
+	@include gradient-linear(top, $main-bg-color, white);
+	border: 0;
+}

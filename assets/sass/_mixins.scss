@@ -1,0 +1,16 @@
+@mixin gradient-linear($to: top, $init: white, $end: black){
+    background-image: linear-gradient(to $to, $init , $end);
+}
+@mixin animacion($duration :3s, $name : fade, $count : 3, $direction : alternate){
+    animation-duration: $duration;
+  	animation-name: $name;
+  	animation-iteration-count: $count;
+  	animation-direction: $direction;
+}
+@mixin background($color: $color-primary, $url : url(), $repeat: no-repeat, $position: center, $size :cover){
+    background-color: $color;
+    background-image: $url;
+    background-repeat: $repeat;
+    background-position: $position;
+    background-size: $size;
+}

@@ -1,0 +1,16 @@
+@keyframes efecto {
+    0%{ height: 0px; }
+    25%{ height: 50px; }
+    50%{ height: 100px;}
+    75%{ height: 150px;}
+    100%{ height: 200px;}
+ }
+ @keyframes anima {
+   from {
+       transform: rotate(0.1turn) translate(0%, 0%);
+   }
+
+   to {
+        transform: rotate(0.9turn) ;
+  }
+ }

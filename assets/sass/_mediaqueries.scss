@@ -1,0 +1,20 @@
+@media only screen and (max-width:768px) {
+	.carousel-inner {
+	    height: 30vh;
+	}
+	section{
+		.slider {
+			.servicio {
+				h1{
+					font-size: 3rem;
+					margin-left: 2rem;
+				}
+			}
+		}
+	}
+	.container-fluid{
+		.social{
+			display: none;
+		}
+	}
+}
