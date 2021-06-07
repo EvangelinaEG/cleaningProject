@@ -1,4 +1,4 @@
-table{
+/* table{
     @include gradient-linear(top, $main-bg-color, white);
     tbody{
         tr{
@@ -9,9 +9,14 @@ table{
             }
         }
     }
-}
+} */
 
 footer{
-	@include gradient-linear(top, $main-bg-color, white);
+    margin: 0;
+	@include gradient-linear(top, $main-bg-color, #e9ecef);
 	border: 0;
+    font-family: $main-font;
+	color: white;
+    height: 100px;
+    padding: 50px 0 0 0;
 }

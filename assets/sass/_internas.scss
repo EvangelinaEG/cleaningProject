@@ -1,7 +1,13 @@
 .formulario{
+	padding: 50px;
 	background-color: $color-secondary;
 	width: $ancho;
 	margin: 0;
+	form{
+		button{
+			margin: 5px;
+		}
+	}
 }
 .boton{
 	padding: 5px 10px;
@@ -19,11 +25,16 @@
 	font-size: 20px;
 	align-content: center;
 	align-items: center;
+	border: none;
+	background-color: transparent;
     img{
         width: 50%;
     }
 }
 .tarjeta{
+	h2{
+		text-align: center;
+	}
 	.tarjeta__img{
 		&:hover{
 			opacity: 0.5;
@@ -31,9 +42,10 @@
 	}
 	.tarjeta__img--mod{
 		@extend .tarjeta__img;
-		width: $ancho/2;
+		width: $ancho;
+		margin: 10px;
 	}
-	$asides: (
+	/* $asides: (
 			aside1: #55acee,
 			aside2:  #3a5795,
 			aside3: green
@@ -42,12 +54,29 @@
 		.a-#{$aside} {
 			box-shadow: 2px 0 2px 0 $color;
 		}
-	}
+	} */
 }
 .carousel-inner{
 	height: 500px;
+	.carousel-item{
+		img{
+			margin-top: -200px;
+		}
+		.carousel-caption{
+			right: 65%!important;
+    		bottom: 45%!important;
+    		left: 9%!important;
+			h5{
+				font-size: 6vh;
+			}
+			p{
+				font-size: 4vh;
+			}
+		}
+	}
 }
 .container{
+	padding: 50px;
 	.container__title{
 		padding:5vh;
 		color: $main-bg-color;
@@ -57,7 +86,7 @@
 	}
 	.container__ul--mod{
 		@extend .container__ul;
-		padding-left: 10px;
+		padding-left: 50px;
 	}
 	.slider{
 		img{
@@ -81,8 +110,8 @@
 		color: $main-bg-color;
 	}
 	.social{
-        width: 20px;
-	    position: absolute;
+        width: 5px;
+	    position: fixed;
 	    top: 40%;
 	    height: 205px;
 	    left: $ancho/$ancho;
@@ -91,7 +120,8 @@
         a{
             img{
 				@include animacion(3s, anima, 1, alternate);
-                width: 10vh;
+                width: 7vh;
+				padding: 10px;
                 &:hover{
                     opacity: 0.5;
                     transition: all 2s;
@@ -104,6 +134,9 @@
     @include background(#ccc, url(../img/sliders/headerServicio.jpg));
     height: 50vh;
     color: $main-bg-color;
+	&:before{
+		opacity: 0.5;
+	}
 }
 section{
 	.slider{
@@ -143,4 +176,22 @@ section{
 		margin-left: 5vh;
 	}
 }
-
+.contenido{
+	.breadcrumb{
+		margin-bottom: 0px;
+	}
+}
+#contacto{
+	h1{
+		text-align: center;	
+	}
+}
+#contratalo{
+	button{
+		margin:10px;
+		width: $ancho/2;
+	}
+}
+.jumbotron{
+	margin-bottom: 0!important;
+}
