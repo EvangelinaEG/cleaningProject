@@ -1,7 +1,6 @@
 .collapse{
-    .nav{
-        background-color: $main-bg-color;
-        .nav__item{
+    .navbar-nav{
+        .nav_item{
             position: relative;
             color: $main-bg-color;
             font-family: $main-font;
@@ -11,38 +10,50 @@
             &:hover{
                 @include gradient-linear(top, white, $main-bg-color);
                 transition: all 2s;
+                color: $main-bg-color;
             }
             a{
-                transition: all 2s;
+                transition: all 2s; 
+                color: $main-bg-color;
             }
-            .nav__link{
+            .nav_link{
                 padding: 0 1rem;
-                color: #fff;
+                color: $main-bg-color!important;
                 &:hover{
                     color: rgb(92, 231, 238);
                 }
             }
             &:nth-child(3n) {
                 color: #fff;
-            }
-            .dropdown-menu{
-                @include gradient-linear(top, $main-bg-color, white);
-                li{
+            } 
+        }
+        .dropdown-menu{
+            @include gradient-linear(top, $main-bg-color, transparent);
+            @include animacion(5s, fadebackground, 1, alternate);
+            border: none;
+            li{
+                @include animacion(3s, slidein, 3, alternate);
+                .show{
+                    ul {
+                    display:block;
+                    height: 100%;
+                    transition: all 5s;
                     @include animacion(3s, slidein, 3, alternate);
-                    .show{
-                        ul {
-                        display:block;
-                        height: 100%;
-                        transition: all 5s;
-                        @include animacion(3s, slidein, 3, alternate);
-                        }
                     }
                 }
             }
         }
     }
 }
-
+.navbar-light{
+    .navbar-nav{
+        .nav-link{
+            @include animacion(8s, fadebackground, 1, alternate);
+            color: $main-bg-color!important;
+            font-weight: bold;
+        }
+    }
+}
 .navbar-expand-lg{
     .navbar-collapse {
 	    justify-content: flex-end;

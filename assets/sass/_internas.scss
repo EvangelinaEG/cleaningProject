@@ -4,6 +4,7 @@
 	width: $ancho;
 	margin: 0;
 	form{
+		@include animacion(3s, fadebackground, 1, alternate);
 		button{
 			margin: 5px;
 		}
@@ -75,13 +76,20 @@
 		}
 	}
 }
+.container-fluid{
+	p{
+		@include animacion(3s, fadebackground, 1, alternate);
+	}
+}
 .container{
 	padding: 50px;
 	.container__title{
+		@include animacion(3s, slidein, 1, alternate);
 		padding:5vh;
 		color: $main-bg-color;
 	}
 	.container__ul{
+		@include animacion(3s, slidein, 1, alternate);
 		font-size: 13px;
 	}
 	.container__ul--mod{
@@ -89,12 +97,17 @@
 		padding-left: 50px;
 	}
 	.slider{
+		position: relative;
 		img{
 			width: $ancho;
 		}
 	}
 	h1{
 		color: $main-bg-color;
+		@include animacion(3s, fadebackground, 1, alternate);
+	}
+	p{
+		@include animacion(3s, slidein, 1, alternate);
 	}
 	.abs-center {
 		color: $main-bg-color;
@@ -134,8 +147,16 @@
     @include background(#ccc, url(../img/sliders/headerServicio.jpg));
     height: 50vh;
     color: $main-bg-color;
-	&:before{
-		opacity: 0.5;
+	position: relative;
+	z-index: 10;
+	&:before {
+		content:'';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.2);
 	}
 }
 section{
@@ -145,6 +166,8 @@ section{
 				font-size: 3rem;
 				margin-left: 5rem;
 				color: $main-bg-color;
+				text-shadow: -4px 3px 0 white, -14px 7px 0 #0a0e27;
+				@include animacion(3s, slidein, 1, alternate);
 			}
 		}
 	}
@@ -153,6 +176,7 @@ section{
 	}
 }
 .servicio{
+	z-index: 100;
 	.servicio__title{
 		color: $main-bg-color;
 	}
@@ -164,6 +188,13 @@ section{
 	.content__list--mod{
 		@extend .content__list;
 		margin-left: 5vh;
+		@include animacion(3s, slidein, 1, alternate);
+	}
+	p{
+		@include animacion(3s, fadebackground, 1, alternate);
+	}
+	h1{
+		@include animacion(3s, slidein, 1, alternate);
 	}
 }
 .table{
@@ -182,6 +213,7 @@ section{
 	}
 }
 #contacto{
+	@include animacion(8s, fadebackground, 1, alternate);
 	h1{
 		text-align: center;	
 	}

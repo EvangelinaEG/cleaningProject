@@ -14,3 +14,20 @@
         transform: rotate(0.9turn) ;
   }
  }
+ @keyframes slidein {
+    from {
+      margin-top: -5%;
+      opacity: 0;
+      width: 300%
+    }
+
+    to {
+      margin-top: 0%;
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  @keyframes fadebackground {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
