@@ -1,0 +1,30 @@
+{
+  "name": "cleaningservices",
+  "version": "2.0.0",
+  "description": "Sitio de limpieza para Edificios, Oficinas y Hogares",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "whatch-css": "nodemon -o scss -x \"npm run build-css\"",
+    "build-css": "node-sass --include-patch scss .assets/sass/style.scss css/style.css --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvangelinaEG/cleaningProject.git"
+  },
+  "keywords": [
+    "limpieza",
+    "mantenimiento",
+    "desinfeccion"
+  ],
+  "author": "Evangelina Gomes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvangelinaEG/cleaningProject/issues"
+  },
+  "homepage": "https://github.com/EvangelinaEG/cleaningProject#readme",
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  },
+  "devDependencies": {}
+}
