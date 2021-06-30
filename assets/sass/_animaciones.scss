@@ -1,33 +1,35 @@
 @keyframes efecto {
     0%{ height: 0px; }
     25%{ height: 50px; }
-    50%{ height: 100px;}
-    75%{ height: 150px;}
-    100%{ height: 200px;}
- }
- @keyframes anima {
-   from {
-       transform: rotate(0.1turn) translate(0%, 0%);
-   }
-
-   to {
+    50%{ height: 100px; }
+    75%{ height: 150px; }
+    100%{ height: 200px; }
+}
+@keyframes anima {
+  from {
+    transform: rotate(0.1turn) translate(0%, 0%);
+  }
+  to {
         transform: rotate(0.9turn) ;
   }
- }
- @keyframes slidein {
-    from {
-      margin-top: -5%;
-      opacity: 0;
-      width: 300%
-    }
-
-    to {
-      margin-top: 0%;
-      opacity: 1;
-      width: 100%;
-    }
+}
+@keyframes slidein {
+  from {
+    margin-top: -5%;
+    opacity: 0;
+    width: 300%
   }
-  @keyframes fadebackground {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  to {
+    margin-top: 0%;
+    opacity: 1;
+    width: 100%;
   }
+}
+@keyframes fadebackground {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

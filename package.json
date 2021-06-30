@@ -1,10 +1,10 @@
 {
   "name": "cleaningservices",
   "version": "2.0.0",
-  "description": "Sitio de limpieza para Edificios, Oficinas y Hogares",
+  "description": "Empresa de limpieza para Edificios, oficinas  y hogares",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
     "whatch-css": "nodemon -o scss -x \"npm run build-css\"",
     "build-css": "node-sass --include-patch scss .assets/sass/style.scss css/style.css --output-style compressed"
   },
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/EvangelinaEG/cleaningProject.git"
   },
   "keywords": [
-    "limpieza",
+    "Limpieza",
     "mantenimiento",
     "desinfeccion"
   ],

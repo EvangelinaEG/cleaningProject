@@ -1,26 +1,22 @@
-@media only screen 
-    and (max-device-width: 640px), 
-    only screen and (max-device-width: 667px), 
-    only screen and (max-width: 480px)
-{
-	.carousel-inner {
-		height: 100vh;
-		top: 50%;
-	}
-	.carousel-inner .carousel-item img {
-		 margin-top: 0px!important; 
-	}
-	.carousel-inner {
-		height: 500px;
-	}
-	.carousel-inner {
-		position: relative;
-		width: 100%;
-		/* overflow: hidden; 
-		margin-top: 50%;*/
-	}
+@media only screen
+    and (max-device-width: 640px),
+    only screen and (max-device-width: 667px),
+    only screen and (max-width: 480px){
+		.carousel-inner {
+			height: 100vh;
+			top: 50%;
+		}
+		.carousel-inner .carousel-item img {
+			margin-top: 0px!important;
+		}
+		.carousel-inner {
+			height: 500px;
+		}
+		.carousel-inner {
+			position: relative;
+			width: 100%;
+		}
 }
-
 @media only screen and (max-width:768px) {
 	.carousel-inner {
 	    height: 30vh;

@@ -46,16 +46,6 @@
 		width: $ancho;
 		margin: 10px;
 	}
-	/* $asides: (
-			aside1: #55acee,
-			aside2:  #3a5795,
-			aside3: green
-	);
-	@each $aside, $color in $asides {
-		.a-#{$aside} {
-			box-shadow: 2px 0 2px 0 $color;
-		}
-	} */
 }
 .carousel-inner{
 	height: 500px;
@@ -130,6 +120,7 @@
 	    left: $ancho/$ancho;
 	    display: flex;
 		flex-direction: column;
+		z-index: 10;
         a{
             img{
 				@include animacion(3s, anima, 1, alternate);
@@ -215,7 +206,7 @@ section{
 #contacto{
 	@include animacion(8s, fadebackground, 1, alternate);
 	h1{
-		text-align: center;	
+		text-align: center;
 	}
 }
 #contratalo{
